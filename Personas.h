@@ -22,6 +22,6 @@ typedef struct lista{
 Persona * newPersona (int edad);
 Lista * newLista();
 void enlistar(Persona * personaALlenar, Lista * lista);
-void mostrar(Persona * persona, Lista * lista);
+void mostrar(Lista * lista);
 
 #endif //GUIA1_EJ13_PERSONAS_H

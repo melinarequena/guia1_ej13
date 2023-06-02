@@ -39,3 +39,14 @@ void enlistar(Persona * personaALlenar, Lista * lista){
         }
         lista->cabecera = personaALlenar;
 }
+
+void mostrar(Lista * lista){
+    int cont=0, suma=0;
+    Persona * auxPersona = lista->cabecera;
+    while(auxPersona !=NULL){
+        suma = suma + auxPersona->edad;
+        cont ++;
+        auxPersona = auxPersona->sig;
+    }
+    printf("El promedio de edad es de %.2f, existen %d personas en total en la lista", (float)suma/cont, cont);
+}
