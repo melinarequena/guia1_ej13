@@ -22,6 +22,7 @@ typedef struct lista{
 Persona * newPersona (int edad);
 Lista * newLista();
 void enlistar(Persona * personaALlenar, Lista * lista);
-void mostrar(Lista * lista);
+void contar(Lista * lista);
+void promedio(Lista * lista);
 
 #endif //GUIA1_EJ13_PERSONAS_H

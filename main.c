@@ -7,7 +7,7 @@ b. El promedio de edades.
 #include "Personas.h"
 
 int main(){
-    Lista * lista = newLista;
+    Lista * lista = newLista();
     enlistar(newPersona(5), lista);
     enlistar(newPersona(20), lista);
     enlistar(newPersona(45), lista);
@@ -15,7 +15,10 @@ int main(){
     enlistar(newPersona(18), lista);
     enlistar(newPersona(20), lista);
     enlistar(newPersona(28), lista);
-    mostrar(lista);
+    enlistar(newPersona(90), lista);
+
+    contar(lista);
+    promedio(lista);
 
     return 0;
 
